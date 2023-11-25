@@ -7,7 +7,9 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Update package list
-sudo apt-get update
+sudo apt-get update 
+sudo apt-get install python-openssl grep -y
+
 
 # Function to check if a command exists and install the package if it doesn't
 install_if_missing() {
